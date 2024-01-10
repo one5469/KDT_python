@@ -1,0 +1,21 @@
+# 리스트 안에 모든 원소를 더한 합계 출력
+datas = ['1', '4', '9']
+
+# => 내장함수 map()
+datas = list(map(int, datas))
+print(datas)
+
+# => 원소에 *100한 값을 리스트에 저장하기
+def multiValue(x):
+    return x * 100
+
+datas = list(map(multiValue, datas))
+print(datas)
+
+datas = list(map(lambda x:x*100, datas))
+print(datas)
+
+def greeting():
+    print("반갑습니다.~")
+
+print((lambda : "반갑습니다.")())
